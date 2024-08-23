@@ -30,3 +30,18 @@ ggplot(data = penguins, aes (x = flipper_length_mm, y = body_mass_g)) +
   theme_eighties()
 ```
 
+```{r}
+
+# devtools::install_github(username/reponame) to install someone else's package ]
+
+library(bananapackage)
+
+
+
+ggplot(data = penguins, aes (x = flipper_length_mm, y = body_mass_g)) +
+  geom_point() +
+  theme_black_purple()
+
+
+```
+
