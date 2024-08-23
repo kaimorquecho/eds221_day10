@@ -1,0 +1,25 @@
+---
+title: "themes"
+format: html
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+```{r}
+ggplot(data = penguins, aes (x = flipper_length_mm, y = body_mass_g)) +
+  geom_point() +
+  labs(title = "Penguins!") +
+  theme(title = element_text(size = 16, color = "white"), 
+        plot.background = element_rect (fill = "red"), 
+        panel_background = element_rect (fill = "yellow"), 
+        axis.text = element_text(color = "blue"), 
+        panel.grid.major = element_line(color = "cyan"), 
+        panel.grid.minor = element_line(color = "green"))
+
+# element is the function, the size, color, plot.background and panel are the arguments of the function 
+
+```
+
