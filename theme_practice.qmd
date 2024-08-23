@@ -22,4 +22,11 @@ ggplot(data = penguins, aes (x = flipper_length_mm, y = body_mass_g)) +
 # element is the function, the size, color, plot.background and panel are the arguments of the function 
 
 ```
+```{r}
+library(eds221day5pack)
+
+ggplot(data = penguins, aes (x = flipper_length_mm, y = body_mass_g)) +
+  geom_point() +
+  theme_eighties()
+```
 
